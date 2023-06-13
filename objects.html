@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+
+<body>
+  <script>
+    const product = {
+      name: 'socks',
+      price: 1000,
+      ['time-delivery']: 'Two 2pm'
+    };
+    console.log(product);
+    console.log(product.name); //listing name alone as a property
+    console.log(product.price);
+    product.newProperty = location;//adding new propety within the object
+    console.log(product);
+    delete product.newProperty; //deletes a property within an object
+    console.log(product);
+    console.log(['time-delivery']);
+
+    console.log(JSON.stringify(product));
+
+    const brian = '{
+    "name": "briano",
+      "families": 4,
+        "work": "nairobi",
+          "names": [
+            "firstName": "javan",
+            "secondName": "odugo",
+            "thirdname": "Nyawach"
+          ]
+    }';
+    const me = JSON.parse(brian);
+    console.log(me);
+
+  </script>
+
+</body>
+
+</html>
